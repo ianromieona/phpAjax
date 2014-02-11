@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>PHP - AJAX</title>
+</head>
+<body>
+	<form id="form">
+		<input type="text" name="name">
+		<input type="text" name="age">
+		<select name="gender">
+			<option>male</option>
+			<option>female</option>
+		</select>
+		<input type="button" data-button="submit" value="Submit">
+		<br>
+		<span id="result"></span>
+	</form>
+</body>
+<script src="jquery.js"></script>
+<script src="phpAjax.js"></script>
+<script>
+	$("form").phpAjax({
+		"url":"controller.php",     // php file path
+		"method": "get",            // form method (post , get)
+		"result": "#result",        // result container
+		"successNote" : "Success!",   // note if the request is success
+		"errorNote" : "Error!"   // note if the request is success
+	});
+</script>
+</html>
