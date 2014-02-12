@@ -17,7 +17,7 @@ Sample implemetation
 				"method": "get",            // form method (post , get)
 				"result": "#result",        // result container
 				"successNote" : "Success!",   // note if the request is success
-				"errorNote" : "Error!"   // note if the request is success
+				"errorNote" : "Error!"   // note if the request is failed
 			});
 		})
 
